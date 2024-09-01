@@ -17,3 +17,9 @@ git push -u origin master : 로컬 레포지토리의 내용을 처음으로 리
 git push : 로컬 레포지토리의 내용을 리모트 레포지토리에 보내기
 git pull : 리모트 레포지토리의 내용을 로컬 레포지토리로 가져오기
 git clone [프로젝트의 GitHub 상 주소] : GitHub에 있는 프로젝트를 내 컴퓨터로 가져오기
+
+#git reset option
+git reset [option] eea5    working directory   staging area    Repository
+           --soft             not change        not change     HEAD->eea5   working dir, stating area는 최신 작업 형태 그대로임.
+           --mixed            not change       chage to eea5   HEAD->eea5   working directory는 최신 작업 형태 그대로임.
+           --hard           chage to eea5      chage to eea5   HEAD->eea5   eea5커밋 이후로의 작업이 모두 사라짐
